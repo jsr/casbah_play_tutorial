@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<form action="@{Messages.save()}" method="POST">
+	<input type="text" name="msg" />
+	<input type="submit" value="Add message" />
+</form>
+
+<ul>
+  #{list items:msgStrings, as:'mess' }
+  <li>${ mess }</li>
+  #{/list}
+</ul>
+

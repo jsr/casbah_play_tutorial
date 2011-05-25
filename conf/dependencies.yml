@@ -1,0 +1,15 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> scala 0.9
+    - com.mongodb.casbah -> casbah_2.8.1 2.1.2
+
+repositories:
+  - scalatools:
+     type: iBiblio
+     root: http://scala-tools.org/repo-releases/
+     contains:
+       - com.mongodb.casbah -> *
+       - org.scalaj -> *
+

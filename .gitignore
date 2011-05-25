@@ -1,0 +1,19 @@
+# ignore all dotfiles
+.*
+
+# except for gitignore
+!.gitignore
+
+# ignore jar files 
+*.jar
+
+#ignore play working directory
+db
+eclipse
+log
+logs
+precompiled
+tmp
+test-result
+server.pid
+
