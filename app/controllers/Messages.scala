@@ -18,6 +18,6 @@ object Messages extends Controller {
 	def save(msg:String) = { 
 		val doc = MongoDBObject("msg" -> msg)
 		mongoConn("casbah_test")("test_data").save( doc )
-		Redirect("/messages")
+		Redirect("/")
 	}
 }
